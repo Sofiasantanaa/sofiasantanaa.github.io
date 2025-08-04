@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofía Santana - Personal Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #4a4e69;
+        }
+
+        .hero-section {
+            background:rgb(223, 203, 223);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .profile-img {
+            max-width: 250px;
+            border-radius: 50%;
+            border: 2px solid rgb(193, 165, 193);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        .skill-badge {
+            font-size: 1.1rem;
+            padding: 0.7em 1.2em;
+            margin: 5px;
+            border-radius: 20px;
+            color: #6d76b0;
+        }
+        .skill-badge.bg-primary { background-color: rgb(188, 188, 232) !important; }
+        .skill-badge.bg-info { background-color: #f0e6ef !important; }
+
+        .project-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .footer-social-icon {
+            font-size: 1.8rem;
+            margin: 0 10px;
+            color: #fdf3f7;
+            transition: color 0.3s ease;
+        }
+        .footer-social-icon:hover {
+            color: #d1e7dd;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .navbar-light .navbar-brand, .navbar-light .nav-link {
+            color:  rgb(194, 142, 194);
+        }
+        .navbar-light .nav-link.active {
+            color: #d1e7dd;
+        }
+        .text-primary { color: rgb(194, 142, 194) !important; }
+        .text-secondary { color: #b0c4de !important; }
+        .bg-light { background-color: #fdf3f7 !important; }
+        .bg-white { background-color: #ffffff !important; }
+        .bg-dark { background-color: #b0c4de !important; }
+
+        .btn-outline-primary {
+            color: #b0d1c2;
+            border-color: #b0d1c2;
+        }
+        .btn-outline-primary:hover {
+            background-color: #b0d1c2;
+            color: #4a4e69;
+        }
+
+        .progress-bar.bg-success { background-color: #cce7d8 !important; }
+        .progress-bar.bg-warning { background-color: #ffe0b3 !important; }
+        .progress-bar.bg-info { background-color: #d9b3d5 !important; }
+
+        a {
+            color:  rgb(194, 142, 194);
+        }
+        a:hover {
+            color:  rgb(194, 142, 194);
+        }
+
+        .hero-section p.lead,
+        .about-me-section p.lead,
+        .about-me-section p,
+        .skill-section label.form-label,
+        .project-card p.card-text,
+        .footer-section p.lead,
+        .footer-section p {
+            color: #4a4e69;
+        }
+
+        footer#contact p {
+            color: #fdf3f7 !important;
+        }
+        footer#contact a {
+            color: #fdf3f7 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="Santana Laura Sofia Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/Sofia.jpeg" class="img-fluid profile-img" alt="Sofía Santana Profile Picture">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary">Hi, I'm Sofía Santana</h1>
+                    <p class="lead mt-3">A passionate learner and aspiring developer who loves blending creativity with technology. My goal is to build meaningful digital experiences that are both functional and visually engaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4 display-5 fw-bold text-secondary">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="lead text-center">I enjoy balancing my passion for software development with creative hobbies like art, design, and music, which inspire my problem-solving and innovation. I am curious by nature and love learning new things—whether it is exploring different cultures through travel or diving into books on various topics. My goal is to grow as a well-rounded software developer, creating meaningful applications that improve people’s lives while staying open to diverse experiences outside of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2 display-5 fw-bold text-secondary">Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h4 class="mt-4 mb-3 text-center" style="color: #b0c4de;">Technical Skills</h4> <div class="d-flex flex-wrap justify-content-center mb-4">
+                        <span class="badge bg-primary skill-badge m-2">HTML5</span>
+                        <span class="badge bg-primary skill-badge m-2">CSS</span>
+                        <span class="badge bg-primary skill-badge m-2">JavaScript</span>
+                        <span class="badge bg-primary skill-badge m-2">Git & GitHub</span>
+                    </div>
+
+                    <h4 class="mt-4 mb-3 text-center" style="color: #b0c4de;">Soft Skills</h4> <div class="d-flex flex-wrap justify-content-center">
+                        <span class="badge bg-info skill-badge m-2">Problem-Solving</span>
+                        <span class="badge bg-info skill-badge m-2">Creativity</span>
+                        <span class="badge bg-info skill-badge m-2">Adaptability</span>
+                        <span class="badge bg-info skill-badge m-2">Teamwork</span>
+                        <span class="badge bg-info skill-badge m-2">Communication</span>
+                    </div>
+
+                    <h4 class="mt-5 mb-3 text-center" style="color: #b0c4de;">Proficiency</h4> <div class="mb-3">
+                        <label for="htmlCss" class="form-label">HTML/CSS</label>
+                        <div class="progress" role="progressbar" aria-label="HTML CSS progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="javascript" class="form-label">JavaScript</label>
+                        <div class="progress" role="progressbar" aria-label="JavaScript progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="python" class="form-label">GitHub</label>
+                        <div class="progress" role="progressbar" aria-label="Python progress" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold text-secondary">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Responsive Portfolio Website</h5>
+                            <p class="card-text">Developed a personal portfolio website using Bootstrap 5, showcasing responsive design principles and various Bootstrap components for a professional look and feel.</p>
+                            <a href="#" class="btn btn-outline-primary stretched-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Interactive Budget Planner App</h5>
+                            <p class="card-text">A JavaScript-based Budget Planner that lets users add expenses, view total spending, and track budgets in real time. It applies key JavaScript concepts such as arrays, functions, conditionals, and DOM manipulation.</p>
+                            <a href="#" class="btn btn-outline-primary stretched-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Style de Vie WebSite</h5>
+                            <p class="card-text">A modern and responsive lifestyle website built using HTML, CSS, and JavaScript. It features interactive navigation, dynamic content, and a visually appealing layout, showcasing front-end web development skills and user-centered design.</p>
+                            <a href="#" class="btn btn-outline-primary stretched-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <h2 class="mb-2 display-7 fw-bold">Get in Touch</h2>
+            <p class="lead mb-2">I'm always open to new opportunities and collaborations!</p>
+            <p class="mb-2">Email: <a href="mailto:n01737339@humber.ca" class="text-decoration-none">n01737339@humber.ca</a></p>
+            <div class="mt-2">
+                <a href="https://github.com/Sofiasantanaa/sofiasantanaa.github.io.git" target="_blank" class="footer-social-icon"><i class="bi bi-github"></i></a>
+            </div>
+            <p class="mt-2 mb-0">&copy; 2025 Sofía Santana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</body>
+</html>
